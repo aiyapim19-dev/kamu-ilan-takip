@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kamu İlan Takip</title>
+<meta name="theme-color" content="#b71c1c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kamu İlan">
+<style>
+  :root {
+    --bg: #0b1220; --card: #141c2e; --card2: #19233a; --line: #26324d;
+    --text: #eef2fb; --muted: #93a0bd; --red: #e53935; --red-dark: #b71c1c;
+    --amber: #ffb300; --green: #43a047;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  body { padding: 0 0 env(safe-area-inset-bottom); }
+  header { position: sticky; top: 0; z-index: 5; background: linear-gradient(180deg, var(--red-dark), #8e1515);
+    padding: calc(env(safe-area-inset-top) + 12px) 16px 12px; box-shadow: 0 2px 12px #0008; }
+  .top { display: flex; align-items: center; gap: 10px; }
+  h1 { font-size: 19px; margin: 0; flex: 1; letter-spacing: .2px; }
+  .badge { background: #fff; color: var(--red-dark); font-weight: 800; border-radius: 99px;
+    padding: 3px 11px; font-size: 15px; min-width: 30px; text-align: center; }
+  .badge.zero { background: #ffffff33; color: #fff; }
+  .sub { font-size: 12.5px; opacity: .9; margin-top: 4px; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  .iconbtn { background: #ffffff22; border: 0; border-radius: 10px; padding: 7px 10px; font-size: 15px; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 16px 4px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; background: var(--card); border: 1px solid var(--line); border-radius: 99px;
+    padding: 7px 13px; font-size: 14px; color: var(--muted); }
+  .chip.on { background: var(--red); border-color: var(--red); color: #fff; font-weight: 700; }
+  main { padding: 8px 16px 90px; max-width: 760px; margin: 0 auto; }
+  .banner { margin: 10px 0; padding: 12px 14px; border-radius: 12px; background: var(--card2);
+    border: 1px solid var(--line); font-size: 14px; }
+  .banner.warn { border-color: var(--amber); }
+  .banner button { margin-top: 8px; background: var(--red); border: 0; border-radius: 9px; padding: 8px 14px; font-weight: 700; color: #fff; }
+  .day { margin: 18px 2px 6px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; }
+  .card { display: block; text-decoration: none; color: inherit; background: var(--card);
+    border: 1px solid var(--line); border-radius: 14px; padding: 13px 14px; margin: 10px 0; position: relative; }
+  .card:active { background: var(--card2); }
+  .card.new { border: 2px solid var(--red); background: linear-gradient(180deg, #2a1418, var(--card));
+    box-shadow: 0 0 0 0 #e5393577; animation: pulse 2s infinite; padding-top: 16px; }
+  .card.unseen:not(.new) { border-left: 5px solid var(--amber); }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 #e5393588; } 70% { box-shadow: 0 0 0 10px #e5393500; } 100% { box-shadow: 0 0 0 0 #e5393500; } }
+  .tag { position: absolute; top: -10px; left: 12px; background: var(--red); color: #fff; font-size: 12px;
+    font-weight: 800; padding: 2px 10px; border-radius: 99px; letter-spacing: .6px; }
+  .kurum { font-size: 17px; font-weight: 800; margin-bottom: 3px; }
+  .card.new .kurum { font-size: 19px; }
+  .baslik { color: #cfd8ee; font-size: 15px; }
+  .meta { display: flex; gap: 10px; align-items: center; margin-top: 9px; font-size: 12.5px; color: var(--muted); }
+  .src { background: #ffffff12; border-radius: 6px; padding: 2px 8px; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 10px; }
+  details { margin: 22px 0 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 14px; }
+  summary { padding: 10px 0; cursor: pointer; font-weight: 700; }
+  .srow { display: flex; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 14px; }
+  .srow .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex: none; }
+  .srow small { display: block; color: var(--muted); font-size: 12.5px; }
+  .fab { position: fixed; right: 16px; bottom: calc(env(safe-area-inset-bottom) + 16px); background: var(--red);
+    border: 0; border-radius: 99px; padding: 13px 18px; font-weight: 800; color: #fff; box-shadow: 0 4px 16px #000a; }
+  .fab[hidden] { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>🚨 Kamu İlan Takip</h1>
+    <span id="badge" class="badge zero">0</span>
+    <button class="iconbtn" id="refresh" aria-label="Yenile">⟳</button>
+  </div>
+  <div class="sub" id="sub">Yükleniyor…</div>
+</header>
+
+<div class="chips" id="chips"></div>
+
+<main>
+  <div id="banners"></div>
+  <div id="list"></div>
+  <details id="status"><summary>Kaynak durumu</summary><div id="srcs"></div></details>
+</main>
+
+<button class="fab" id="markall" hidden>✓ Hepsini okundu yap</button>
+
+<script>
+const SEEN_KEY = "kamu-seen-v1";
+const NEW_HOURS = 24;
+let DATA = { items: [], sources: [] };
+let filter = "all";
+let seen = new Set();
+try { seen = new Set(JSON.parse(localStorage.getItem(SEEN_KEY) || "[]")); } catch (e) {}
+let firstLoad = true;
+let known = new Set();
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function ago(iso) {
+  const m = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000));
+  if (m < 1) return "az önce";
+  if (m < 60) return m + " dk önce";
+  const h = Math.round(m / 60);
+  if (h < 24) return h + " saat önce";
+  return Math.round(h / 24) + " gün önce";
+}
+function dayLabel(iso) {
+  const d = new Date(iso), t = new Date();
+  const same = (a, b) => a.toDateString() === b.toDateString();
+  const y = new Date(t); y.setDate(t.getDate() - 1);
+  if (same(d, t)) return "Bugün";
+  if (same(d, y)) return "Dün";
+  return d.toLocaleDateString("tr-TR", { day: "numeric", month: "long", weekday: "long" });
+}
+const isNew = (it) => !it.seed && (Date.now() - new Date(it.first_seen)) < NEW_HOURS * 3600e3;
+const srcName = (id) => (DATA.sources.find((s) => s.id === id) || {}).name || id;
+
+function render() {
+  const items = DATA.items.filter((i) => filter === "all" || i.source === filter);
+  const unseenCount = DATA.items.filter((i) => !seen.has(i.id) && !i.seed).length;
+  $("badge").textContent = unseenCount;
+  $("badge").classList.toggle("zero", unseenCount === 0);
+  $("markall").hidden = unseenCount === 0;
+  if (navigator.setAppBadge) { unseenCount ? navigator.setAppBadge(unseenCount) : navigator.clearAppBadge(); }
+  document.title = unseenCount ? `(${unseenCount}) Kamu İlan Takip` : "Kamu İlan Takip";
+
+  $("sub").textContent = DATA.updated
+    ? `Son kontrol: ${ago(DATA.updated)} · saatte bir otomatik`
+    : "Henüz veri yok";
+
+  // chips
+  const ids = [...new Set(DATA.items.map((i) => i.source))];
+  $("chips").innerHTML = [`<button class="chip ${filter === "all" ? "on" : ""}" data-f="all">Tümü</button>`]
+    .concat(ids.map((id) => `<button class="chip ${filter === id ? "on" : ""}" data-f="${esc(id)}">${esc(srcName(id))}</button>`)).join("");
+
+  // list
+  if (!items.length) {
+    $("list").innerHTML = `<div class="empty">Gösterilecek ilan yok.<br>İlk tarama tamamlandığında burada görünür.</div>`;
+  } else {
+    let html = "", last = "";
+    for (const it of items) {
+      const lbl = dayLabel(it.first_seen);
+      if (lbl !== last) { html += `<div class="day">${esc(lbl)}</div>`; last = lbl; }
+      const n = isNew(it), un = !seen.has(it.id) && !it.seed;
+      html += `<a class="card ${n ? "new" : ""} ${un ? "unseen" : ""}" href="${esc(it.url)}" target="_blank" rel="noopener" data-id="${esc(it.id)}">
+        ${n ? '<span class="tag">YENİ İLAN</span>' : ""}
+        <div class="kurum">${esc(it.kurum || "Kurum belirtilmemiş")}</div>
+        <div class="baslik">${esc(it.baslik)}</div>
+        <div class="meta"><span class="src">${esc(srcName(it.source))}</span><span>${ago(it.first_seen)} bulundu</span></div>
+      </a>`;
+    }
+    $("list").innerHTML = html;
+  }
+
+  // source status
+  $("srcs").innerHTML = (DATA.sources || []).map((s) => {
+    const color = !s.ok ? "var(--red)" : s.error ? "var(--amber)" : "var(--green)";
+    return `<div class="srow"><span class="dot" style="background:${color}"></span><div>
+      <a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:inherit"><b>${esc(s.name)}</b></a> — ${s.count} ilan
+      ${s.error ? `<small>${esc(s.error)}</small>` : ""}</div></div>`;
+  }).join("") || '<div class="srow">Henüz kaynak bilgisi yok.</div>';
+  const bad = (DATA.sources || []).filter((s) => !s.ok || s.error).length;
+  $("status").querySelector("summary").textContent = bad ? `Kaynak durumu (⚠ ${bad} sorunlu)` : "Kaynak durumu (hepsi çalışıyor)";
+}
+
+function banners() {
+  let h = "";
+  if ("Notification" in window && Notification.permission === "default")
+    h += `<div class="banner">Uygulama açıkken sesli bildirim için izin ver.<br><button id="askn">Bildirimi aç</button></div>`;
+  if (deferredPrompt) h += `<div class="banner">Telefona uygulama olarak kur.<br><button id="install">Kur</button></div>`;
+  else if (/iphone|ipad/i.test(navigator.userAgent) && !navigator.standalone)
+    h += `<div class="banner">iPhone'da kurmak için <b>Paylaş → Ana Ekrana Ekle</b>.</div>`;
+  $("banners").innerHTML = h;
+  const a = $("askn"); if (a) a.onclick = async () => { await Notification.requestPermission(); banners(); };
+  const i = $("install"); if (i) i.onclick = async () => { deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; banners(); };
+}
+
+async function load() {
+  try {
+    const r = await fetch("data/ilanlar.json?t=" + Date.now(), { cache: "no-store" });
+    DATA = Object.assign({ items: [], sources: [] }, await r.json());
+  } catch (e) { /* çevrimdışı */ }
+  const fresh = DATA.items.filter((i) => !i.seed && !known.has(i.id) && !seen.has(i.id));
+  if (!firstLoad && fresh.length && "Notification" in window && Notification.permission === "granted") {
+    const f = fresh[0];
+    new Notification("🚨 Yeni ilan: " + (f.kurum || srcName(f.source)), { body: f.baslik, icon: "icons/icon-192.png" });
+    if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+  }
+  DATA.items.forEach((i) => known.add(i.id));
+  firstLoad = false;
+  render();
+}
+
+function saveSeen() { try { localStorage.setItem(SEEN_KEY, JSON.stringify([...seen].slice(-2000))); } catch (e) {} }
+
+$("chips").addEventListener("click", (e) => { const b = e.target.closest("[data-f]"); if (b) { filter = b.dataset.f; render(); } });
+$("list").addEventListener("click", (e) => { const c = e.target.closest("[data-id]"); if (c) { seen.add(c.dataset.id); saveSeen(); setTimeout(render, 300); } });
+$("markall").onclick = () => { DATA.items.forEach((i) => seen.add(i.id)); saveSeen(); render(); };
+$("refresh").onclick = load;
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+setInterval(load, 5 * 60 * 1000);
+
+let deferredPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredPrompt = e; banners(); });
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+
+banners();
+load();
+</script>
+</body>
+</html>
