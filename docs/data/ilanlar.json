@@ -1,6 +1,22 @@
 {
  "items": [
   {
+   "id": "75cb46b7c80f1d70",
+   "source": "ilangov",
+   "kurum": "",
+   "baslik": "Kamu-Akademik Personel (107)",
+   "url": "https://www.ilan.gov.tr/ilan/kategori/8/kamu-akademik-personel",
+   "first_seen": "2026-11-05T01:44:39+03:00"
+  },
+  {
+   "id": "f56a69153c0f959b",
+   "source": "ilangov",
+   "kurum": "",
+   "baslik": "PERSONEL ALIMI 107",
+   "url": "https://www.ilan.gov.tr/ilan/tum-ilanlar/personel-alimi?ats=5",
+   "first_seen": "2026-11-05T01:44:39+03:00"
+  },
+  {
    "id": "c7f35c8f5265809e",
    "source": "ilangov",
    "kurum": "",
@@ -48,7 +64,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-05T00:45:31+03:00"
+   "checked": "2026-11-05T01:43:39+03:00"
   },
   {
    "id": "yerel",
@@ -57,7 +73,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-05T00:45:32+03:00"
+   "checked": "2026-11-05T01:43:41+03:00"
   },
   {
    "id": "ilangov",
@@ -66,7 +82,7 @@
    "ok": true,
    "count": 4,
    "error": "",
-   "checked": "2026-11-05T00:46:19+03:00"
+   "checked": "2026-11-05T01:44:27+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -75,7 +91,7 @@
    "ok": false,
    "count": 0,
    "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://isealimkariyerkapisi.cbiko.gov.tr/\nCall log:\n  - navigating to \"https://isealimkariyerkapisi.cbiko.gov.tr/\", wa",
-   "checked": "2026-11-05T00:46:25+03:00"
+   "checked": "2026-11-05T01:44:32+03:00"
   },
   {
    "id": "iskur_memur",
@@ -84,7 +100,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 404 Client Error: Not Found for url: https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/",
-   "checked": "2026-11-05T00:46:27+03:00"
+   "checked": "2026-11-05T01:44:34+03:00"
   },
   {
    "id": "iskur_isci",
@@ -93,7 +109,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 404 Client Error: Not Found for url: https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/",
-   "checked": "2026-11-05T00:46:29+03:00"
+   "checked": "2026-11-05T01:44:36+03:00"
   },
   {
    "id": "resmigazete",
@@ -102,8 +118,8 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-05T00:46:29+03:00"
+   "checked": "2026-11-05T01:44:37+03:00"
   }
  ],
- "updated": "2026-11-05T00:46:32+03:00"
+ "updated": "2026-11-05T01:44:39+03:00"
 }
