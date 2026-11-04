@@ -1,0 +1,39 @@
+[
+  {
+    "id": "kamuilan",
+    "name": "Kamu İlan (SBB)",
+    "url": "https://kamuilan.sbb.gov.tr/"
+  },
+  {
+    "id": "yerel",
+    "name": "Yerel Yönetimler (ÇŞB)",
+    "url": "https://yerelyonetimler.csb.gov.tr/"
+  },
+  {
+    "id": "ilangov",
+    "name": "ilan.gov.tr",
+    "url": "https://www.ilan.gov.tr/",
+    "js": true
+  },
+  {
+    "id": "kariyerkapisi",
+    "name": "Kariyer Kapısı",
+    "url": "https://isealimkariyerkapisi.cbiko.gov.tr/",
+    "js": true
+  },
+  {
+    "id": "iskur_memur",
+    "name": "İŞKUR – Kamu Memur",
+    "url": "https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/"
+  },
+  {
+    "id": "iskur_isci",
+    "name": "İŞKUR – Kamu İşçi",
+    "url": "https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/"
+  },
+  {
+    "id": "resmigazete",
+    "name": "Resmî Gazete",
+    "url": "https://www.resmigazete.gov.tr/fihrist?tarih={date}"
+  }
+]
