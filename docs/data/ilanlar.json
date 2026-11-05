@@ -1,90 +1,11 @@
 {
  "items": [
   {
-   "id": "5d3c94b4d95d5de6",
-   "source": "iskur_memur",
-   "kurum": "",
-   "baslik": "Kurumdışı Kamu İşçi Alım ...",
-   "url": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/",
-   "first_seen": "2026-11-05T08:33:46+03:00",
-   "seed": true
-  },
-  {
-   "id": "117794ac5fecfcd7",
-   "source": "iskur_memur",
-   "kurum": "",
-   "baslik": "Kamu Memur Alım İlanları",
-   "url": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/",
-   "first_seen": "2026-11-05T08:33:46+03:00",
-   "seed": true
-  },
-  {
-   "id": "5b1f48b935cad6a2",
-   "source": "iskur_isci",
-   "kurum": "",
-   "baslik": "Kurumdışı Kamu İşçi Alım ...",
-   "url": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/",
-   "first_seen": "2026-11-05T08:33:46+03:00",
-   "seed": true
-  },
-  {
-   "id": "4bab476cb53b864a",
-   "source": "iskur_isci",
-   "kurum": "",
-   "baslik": "Kamu Memur Alım İlanları",
-   "url": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/",
-   "first_seen": "2026-11-05T08:33:46+03:00",
-   "seed": true
-  },
-  {
-   "id": "75cb46b7c80f1d70",
-   "source": "ilangov",
-   "kurum": "",
-   "baslik": "Kamu-Akademik Personel (107)",
-   "url": "https://www.ilan.gov.tr/ilan/kategori/8/kamu-akademik-personel",
-   "first_seen": "2026-11-05T01:44:39+03:00"
-  },
-  {
-   "id": "f56a69153c0f959b",
-   "source": "ilangov",
-   "kurum": "",
-   "baslik": "PERSONEL ALIMI 107",
-   "url": "https://www.ilan.gov.tr/ilan/tum-ilanlar/personel-alimi?ats=5",
-   "first_seen": "2026-11-05T01:44:39+03:00"
-  },
-  {
-   "id": "c7f35c8f5265809e",
-   "source": "ilangov",
-   "kurum": "",
-   "baslik": "Kamu-Akademik Personel (119)",
-   "url": "https://www.ilan.gov.tr/ilan/kategori/8/kamu-akademik-personel",
-   "first_seen": "2026-11-04T23:39:52+03:00",
-   "seed": true
-  },
-  {
-   "id": "1b1b1ebafd56be96",
-   "source": "ilangov",
-   "kurum": "",
-   "baslik": "PERSONEL ALIMI 119",
-   "url": "https://www.ilan.gov.tr/ilan/tum-ilanlar/personel-alimi?ats=5",
-   "first_seen": "2026-11-04T23:39:52+03:00",
-   "seed": true
-  },
-  {
    "id": "797a8a3d46e189a7",
    "source": "ilangov",
    "kurum": "",
    "baslik": "MERSİN İLİ DAMIZLIK KOYUN-KEÇİ YETİŞTİRİCİLERİ BİRLİĞİ Proje Teknik Elemanı Alınacak",
    "url": "https://www.ilan.gov.tr/ilan/2270609/kamu-akademik-personel-kamu-personel-alim-ve-sinavlari-proje teknik-elemani-alinacak",
-   "first_seen": "2026-11-04T23:39:52+03:00",
-   "seed": true
-  },
-  {
-   "id": "46b3220b2de8f84d",
-   "source": "ilangov",
-   "kurum": "",
-   "baslik": "Personel Alımı İlanı Nedir ?",
-   "url": "https://www.ilan.gov.tr/bik-personel-alimi-ilanlarini-nasil-takip-ederim",
    "first_seen": "2026-11-04T23:39:52+03:00",
    "seed": true
   }
@@ -102,7 +23,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-05T08:32:31+03:00"
+   "checked": "2026-11-05T08:40:17+03:00"
   },
   {
    "id": "yerel",
@@ -111,7 +32,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-05T08:32:32+03:00"
+   "checked": "2026-11-05T08:40:19+03:00"
   },
   {
    "id": "ilangov",
@@ -120,7 +41,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-05T08:33:18+03:00"
+   "checked": "2026-11-05T08:41:05+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -129,25 +50,25 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-05T08:33:24+03:00"
+   "checked": "2026-11-05T08:41:12+03:00"
   },
   {
    "id": "iskur_memur",
    "name": "İŞKUR – Kamu Memur",
    "url": "https://www.iskur.gov.tr/",
    "ok": true,
-   "count": 2,
-   "error": "",
-   "checked": "2026-11-05T08:33:31+03:00"
+   "count": 0,
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-05T08:41:19+03:00"
   },
   {
    "id": "iskur_isci",
    "name": "İŞKUR – Kamu İşçi",
    "url": "https://www.iskur.gov.tr/",
    "ok": true,
-   "count": 2,
-   "error": "",
-   "checked": "2026-11-05T08:33:37+03:00"
+   "count": 0,
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-05T08:41:24+03:00"
   },
   {
    "id": "resmigazete",
@@ -156,8 +77,8 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-05T08:33:44+03:00"
+   "checked": "2026-11-05T08:41:32+03:00"
   }
  ],
- "updated": "2026-11-05T08:33:46+03:00"
+ "updated": "2026-11-05T08:41:34+03:00"
 }
