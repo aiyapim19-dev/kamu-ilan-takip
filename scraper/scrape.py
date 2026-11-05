@@ -44,8 +44,21 @@ KURUM_PREFIX = re.compile(
     r"rektörlüğü|dekanlığı|başhekimliği|kurumu))"
 )
 # Menü/kategori bağlantılarını ele: "...Nedir ?", "Kamu-Akademik Personel (119)", "PERSONEL ALIMI 119"
-TITLE_EXCLUDE_RE = [re.compile(p) for p in (r"\?\s*$", r"\(\d+\)\s*$", r"\s\d{1,4}\s*$")]
+TITLE_EXCLUDE_RE = [re.compile(p) for p in (
+    r"\?\s*$",                      # "... Nedir ?"
+    r"\(\s*\d+\s*\)\s*$",           # "Kamu-Akademik Personel (107)"
+    r"\s\d{1,4}\s*$",               # "PERSONEL ALIMI 107"
+    r"(…|\.\.\.)\s*$",              # "Kurumdışı Kamu İşçi Alım ..." (kısaltılmış menü metni)
+)]
+# Menü / kategori bağlantıları (gerçek ilan başlığı değil)
+GENERIC_RE = [re.compile(p) for p in (
+    r"^kamu[\s-]*(memur|işçi|akademik|personel)[a-zçğıöşü\s-]{0,30}(ilanları|ilanı)?$",
+    r"^kurum\s*dışı\s+kamu",
+    r"^(kamu\s+)?(memur|işçi|personel)\s+alım[a-zçğıöşü\s]{0,20}$",
+    r"^personel\s+alımı$",
+)]
 TR_MAP = str.maketrans({"İ": "i", "I": "ı"})
+_INVISIBLE = re.compile("[​‌‍⁠﻿­]")
 
 
 def low(s):
@@ -53,7 +66,14 @@ def low(s):
 
 
 def norm(s):
-    return re.sub(r"\s+", " ", s or "").strip()
+    return re.sub(r"\s+", " ", _INVISIBLE.sub("", s or "")).strip()
+
+
+def is_junk(title):
+    t = norm(title)
+    if any(r.search(t) for r in TITLE_EXCLUDE_RE):
+        return True
+    return any(r.search(low(t)) for r in GENERIC_RE)
 
 
 def now_iso():
@@ -134,7 +154,7 @@ def extract(html, base_url, cfg=None):
                 title = longest
         if len(title.split()) < 3 or len(title) > 300:
             continue
-        if any(r.search(title) for r in TITLE_EXCLUDE_RE):
+        if is_junk(title):
             continue
         hay = low(title + " " + context)
         if any(x in hay for x in exclude):
@@ -257,7 +277,8 @@ def notify(new_items, names):
 # --------------------------------------------------------------------- main
 def merge(state, results, now):
     """results: [(status, items)]. Yeni ilanları döndürür, state'i günceller."""
-    existing = {it["id"]: it for it in state.get("items", [])}
+    # Eski kodun kaydettiği menü/çöp satırlarını temizle
+    existing = {it["id"]: it for it in state.get("items", []) if not is_junk(it["baslik"])}
     seeded = set(state.get("seeded", []))
     new_items = []
     for st, items in results:
