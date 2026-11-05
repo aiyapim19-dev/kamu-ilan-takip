@@ -1,6 +1,42 @@
 {
  "items": [
   {
+   "id": "5d3c94b4d95d5de6",
+   "source": "iskur_memur",
+   "kurum": "",
+   "baslik": "Kurumdışı Kamu İşçi Alım ...",
+   "url": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/",
+   "first_seen": "2026-11-05T08:33:46+03:00",
+   "seed": true
+  },
+  {
+   "id": "117794ac5fecfcd7",
+   "source": "iskur_memur",
+   "kurum": "",
+   "baslik": "Kamu Memur Alım İlanları",
+   "url": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/",
+   "first_seen": "2026-11-05T08:33:46+03:00",
+   "seed": true
+  },
+  {
+   "id": "5b1f48b935cad6a2",
+   "source": "iskur_isci",
+   "kurum": "",
+   "baslik": "Kurumdışı Kamu İşçi Alım ...",
+   "url": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/",
+   "first_seen": "2026-11-05T08:33:46+03:00",
+   "seed": true
+  },
+  {
+   "id": "4bab476cb53b864a",
+   "source": "iskur_isci",
+   "kurum": "",
+   "baslik": "Kamu Memur Alım İlanları",
+   "url": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/",
+   "first_seen": "2026-11-05T08:33:46+03:00",
+   "seed": true
+  },
+  {
    "id": "75cb46b7c80f1d70",
    "source": "ilangov",
    "kurum": "",
@@ -54,7 +90,9 @@
   }
  ],
  "seeded": [
-  "ilangov"
+  "ilangov",
+  "iskur_isci",
+  "iskur_memur"
  ],
  "sources": [
   {
@@ -64,7 +102,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-05T07:55:27+03:00"
+   "checked": "2026-11-05T08:32:31+03:00"
   },
   {
    "id": "yerel",
@@ -73,43 +111,43 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-05T07:55:30+03:00"
+   "checked": "2026-11-05T08:32:32+03:00"
   },
   {
    "id": "ilangov",
    "name": "ilan.gov.tr",
    "url": "https://www.ilan.gov.tr/",
    "ok": true,
-   "count": 4,
+   "count": 1,
    "error": "",
-   "checked": "2026-11-05T07:56:16+03:00"
+   "checked": "2026-11-05T08:33:18+03:00"
   },
   {
    "id": "kariyerkapisi",
    "name": "Kariyer Kapısı",
-   "url": "https://isealimkariyerkapisi.cbiko.gov.tr/",
-   "ok": false,
+   "url": "https://kariyerkapisi.gov.tr/",
+   "ok": true,
    "count": 0,
-   "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://isealimkariyerkapisi.cbiko.gov.tr/\nCall log:\n  - navigating to \"https://isealimkariyerkapisi.cbiko.gov.tr/\", wa",
-   "checked": "2026-11-05T07:56:23+03:00"
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-05T08:33:24+03:00"
   },
   {
    "id": "iskur_memur",
    "name": "İŞKUR – Kamu Memur",
-   "url": "https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: 404 Client Error: Not Found for url: https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/",
-   "checked": "2026-11-05T07:56:26+03:00"
+   "url": "https://www.iskur.gov.tr/",
+   "ok": true,
+   "count": 2,
+   "error": "",
+   "checked": "2026-11-05T08:33:31+03:00"
   },
   {
    "id": "iskur_isci",
    "name": "İŞKUR – Kamu İşçi",
-   "url": "https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: 404 Client Error: Not Found for url: https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/",
-   "checked": "2026-11-05T07:56:28+03:00"
+   "url": "https://www.iskur.gov.tr/",
+   "ok": true,
+   "count": 2,
+   "error": "",
+   "checked": "2026-11-05T08:33:37+03:00"
   },
   {
    "id": "resmigazete",
@@ -118,8 +156,8 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-05T07:56:29+03:00"
+   "checked": "2026-11-05T08:33:44+03:00"
   }
  ],
- "updated": "2026-11-05T07:56:32+03:00"
+ "updated": "2026-11-05T08:33:46+03:00"
 }
