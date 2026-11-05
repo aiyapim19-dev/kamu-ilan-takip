@@ -18,18 +18,30 @@
   {
     "id": "kariyerkapisi",
     "name": "Kariyer Kapısı",
-    "url": "https://isealimkariyerkapisi.cbiko.gov.tr/",
+    "urls": [
+      "https://www.kariyerkapisi.gov.tr/",
+      "https://kariyerkapisi.gov.tr/",
+      "https://isealimkariyerkapisi.cbiko.gov.tr/"
+    ],
     "js": true
   },
   {
     "id": "iskur_memur",
     "name": "İŞKUR – Kamu Memur",
-    "url": "https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/"
+    "urls": [
+      "https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/",
+      "https://www.iskur.gov.tr/"
+    ],
+    "follow": ["kamu memur alım"]
   },
   {
     "id": "iskur_isci",
     "name": "İŞKUR – Kamu İşçi",
-    "url": "https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/"
+    "urls": [
+      "https://www.iskur.gov.tr/baglantilar/kurum-disi-kamu-isci-alimi-ilani/",
+      "https://www.iskur.gov.tr/"
+    ],
+    "follow": ["kurum dışı kamu işçi"]
   },
   {
     "id": "resmigazete",

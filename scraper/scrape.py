@@ -39,9 +39,12 @@ KURUM_RE = re.compile(
     r"hastane|birliği|odası|akademi|a\.ş)"
 )
 KURUM_PREFIX = re.compile(
-    r"^(.{3,90}?(Üniversitesi|Belediye Başkanlığı|Belediyesi|Bakanlığı|Başkanlığı|"
-    r"Genel Müdürlüğü|Müdürlüğü|Valiliği|Kaymakamlığı|Hastanesi))"
+    r"^(.{3,100}?(üniversitesi|belediye başkanlığı|belediyesi|bakanlığı|başkanlığı|"
+    r"genel müdürlüğü|müdürlüğü|valiliği|kaymakamlığı|hastanesi|birliği|odası|"
+    r"rektörlüğü|dekanlığı|başhekimliği|kurumu))"
 )
+# Menü/kategori bağlantılarını ele: "...Nedir ?", "Kamu-Akademik Personel (119)", "PERSONEL ALIMI 119"
+TITLE_EXCLUDE_RE = [re.compile(p) for p in (r"\?\s*$", r"\(\d+\)\s*$", r"\s\d{1,4}\s*$")]
 TR_MAP = str.maketrans({"İ": "i", "I": "ı"})
 
 
@@ -131,6 +134,8 @@ def extract(html, base_url, cfg=None):
                 title = longest
         if len(title.split()) < 3 or len(title) > 300:
             continue
+        if any(r.search(title) for r in TITLE_EXCLUDE_RE):
+            continue
         hay = low(title + " " + context)
         if any(x in hay for x in exclude):
             continue
@@ -149,8 +154,22 @@ def guess_kurum(title, cells):
     for c in cells:
         if c != title and len(c) < 120 and KURUM_RE.search(low(c)):
             return c
-    m = KURUM_PREFIX.match(title)
-    return m.group(1).strip() if m else ""
+    # low() karakter sayısını korur, bu yüzden indeksler orijinal başlıkla örtüşür
+    m = KURUM_PREFIX.match(low(title))
+    return title[: m.end(1)].strip() if m else ""
+
+
+def discover(html, base_url, terms):
+    """Ana sayfadaki bağlantılardan, metni terimlerden birini içerenleri bulur."""
+    soup = BeautifulSoup(html, "html.parser")
+    terms = [low(t) for t in terms]
+    out = []
+    for a in soup.select("a[href]"):
+        if any(t in low(norm(a.get_text(" "))) for t in terms):
+            u = urljoin(base_url, a["href"].strip())
+            if u.startswith("http") and u not in out:
+                out.append(u)
+    return out[:4]
 
 
 def item_id(source, it):
@@ -159,16 +178,43 @@ def item_id(source, it):
 
 
 # ------------------------------------------------------------------ sources
+def get_page(url, cfg):
+    return fetch_js(url) if cfg.get("js") else fetch_static(url)
+
+
 def run_source(cfg):
-    url = cfg["url"].replace("{date}", dt.datetime.now(TZ).strftime("%Y-%m-%d"))
-    st = {"id": cfg["id"], "name": cfg["name"], "url": url, "ok": False,
+    today = dt.datetime.now(TZ).strftime("%Y-%m-%d")
+    candidates = [u.replace("{date}", today) for u in cfg.get("urls", [cfg.get("url")])]
+    st = {"id": cfg["id"], "name": cfg["name"], "url": candidates[0], "ok": False,
           "count": 0, "error": "", "checked": now_iso()}
-    if not robots_allowed(url):
-        st["error"] = "Sitenin robots.txt dosyası otomatik erişime izin vermiyor, atlandı"
-        return st, []
     try:
-        html = fetch_js(url) if cfg.get("js") else fetch_static(url)
-        items = extract(html, url, cfg)
+        html, url, last_err = None, None, None
+        for cand in candidates:
+            if not robots_allowed(cand):
+                last_err = "Sitenin robots.txt dosyası otomatik erişime izin vermiyor, atlandı"
+                continue
+            try:
+                html, url = get_page(cand, cfg), cand
+                st["url"] = cand
+                break
+            except Exception as e:  # noqa: BLE001
+                last_err = f"{type(e).__name__}: {str(e)[:160]}"
+        if html is None:
+            st["error"] = last_err or "Sayfa açılamadı"
+            return st, []
+        if cfg.get("follow"):
+            links = [u for u in discover(html, url, cfg["follow"]) if robots_allowed(u)]
+            if not links:
+                st["error"] = "Ana sayfada ilgili bağlantı bulunamadı"
+                return st, []
+            items = []
+            for link in links:
+                try:
+                    items += extract(get_page(link, cfg), link, cfg)
+                except Exception as e:  # noqa: BLE001
+                    st["error"] = f"{type(e).__name__}: {str(e)[:120]}"
+        else:
+            items = extract(html, url, cfg)
         st["ok"] = True
         st["count"] = len(items)
         if not items:
