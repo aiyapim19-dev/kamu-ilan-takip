@@ -41,7 +41,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-06T10:05:37+03:00"
+   "checked": "2026-11-06T11:18:01+03:00"
   },
   {
    "id": "yerel",
@@ -50,7 +50,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-06T10:05:40+03:00"
+   "checked": "2026-11-06T11:18:03+03:00"
   },
   {
    "id": "ilangov",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-06T10:06:26+03:00"
+   "checked": "2026-11-06T11:18:49+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -68,7 +68,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T10:06:33+03:00"
+   "checked": "2026-11-06T11:18:55+03:00"
   },
   {
    "id": "iskur_memur",
@@ -77,7 +77,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T10:06:40+03:00"
+   "checked": "2026-11-06T11:19:02+03:00"
   },
   {
    "id": "iskur_isci",
@@ -86,7 +86,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T10:06:47+03:00"
+   "checked": "2026-11-06T11:19:08+03:00"
   },
   {
    "id": "resmigazete",
@@ -95,8 +95,8 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-06T10:06:53+03:00"
+   "checked": "2026-11-06T11:19:15+03:00"
   }
  ],
- "updated": "2026-11-06T10:06:56+03:00"
+ "updated": "2026-11-06T11:19:17+03:00"
 }
