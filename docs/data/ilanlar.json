@@ -41,7 +41,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-06T05:52:21+03:00"
+   "checked": "2026-11-06T06:49:31+03:00"
   },
   {
    "id": "yerel",
@@ -50,7 +50,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-06T05:52:24+03:00"
+   "checked": "2026-11-06T06:49:32+03:00"
   },
   {
    "id": "ilangov",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-06T05:53:10+03:00"
+   "checked": "2026-11-06T06:50:18+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -68,7 +68,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T05:53:18+03:00"
+   "checked": "2026-11-06T06:50:26+03:00"
   },
   {
    "id": "iskur_memur",
@@ -77,7 +77,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T05:53:24+03:00"
+   "checked": "2026-11-06T06:50:31+03:00"
   },
   {
    "id": "iskur_isci",
@@ -86,17 +86,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-06T05:53:31+03:00"
+   "checked": "2026-11-06T06:50:36+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
    "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-06",
-   "ok": false,
-   "count": 0,
-   "error": "ReadTimeout: HTTPSConnectionPool(host='www.resmigazete.gov.tr', port=443): Read timed out. (read timeout=30)",
-   "checked": "2026-11-06T05:53:38+03:00"
+   "ok": true,
+   "count": 1,
+   "error": "",
+   "checked": "2026-11-06T06:50:42+03:00"
   }
  ],
- "updated": "2026-11-06T05:54:25+03:00"
+ "updated": "2026-11-06T06:50:44+03:00"
 }
