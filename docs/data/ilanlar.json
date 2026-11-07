@@ -49,7 +49,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-07T03:56:22+03:00"
+   "checked": "2026-11-07T04:54:05+03:00"
   },
   {
    "id": "yerel",
@@ -58,7 +58,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-07T03:56:25+03:00"
+   "checked": "2026-11-07T04:54:08+03:00"
   },
   {
    "id": "ilangov",
@@ -67,7 +67,7 @@
    "ok": true,
    "count": 2,
    "error": "",
-   "checked": "2026-11-07T03:57:12+03:00"
+   "checked": "2026-11-07T04:54:53+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -76,7 +76,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-07T03:57:20+03:00"
+   "checked": "2026-11-07T04:54:59+03:00"
   },
   {
    "id": "iskur_memur",
@@ -85,7 +85,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-07T03:57:28+03:00"
+   "checked": "2026-11-07T04:55:06+03:00"
   },
   {
    "id": "iskur_isci",
@@ -94,17 +94,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-07T03:57:36+03:00"
+   "checked": "2026-11-07T04:55:13+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
    "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-07",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "ReadTimeout: HTTPSConnectionPool(host='www.resmigazete.gov.tr', port=443): Read timed out. (read timeout=30)",
-   "checked": "2026-11-07T03:57:45+03:00"
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-07T04:55:20+03:00"
   }
  ],
- "updated": "2026-11-07T03:58:33+03:00"
+ "updated": "2026-11-07T04:55:23+03:00"
 }
