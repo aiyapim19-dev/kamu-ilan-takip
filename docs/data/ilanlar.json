@@ -49,7 +49,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-09T06:52:27+03:00"
+   "checked": "2026-11-09T07:59:08+03:00"
   },
   {
    "id": "yerel",
@@ -58,7 +58,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-09T06:52:31+03:00"
+   "checked": "2026-11-09T07:59:10+03:00"
   },
   {
    "id": "ilangov",
@@ -67,16 +67,16 @@
    "ok": true,
    "count": 2,
    "error": "",
-   "checked": "2026-11-09T06:53:18+03:00"
+   "checked": "2026-11-09T07:59:56+03:00"
   },
   {
    "id": "kariyerkapisi",
    "name": "Kariyer Kapısı",
-   "url": "https://kariyerkapisi.gov.tr/",
-   "ok": true,
+   "url": "https://www.kariyerkapisi.gov.tr/",
+   "ok": false,
    "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-09T06:53:25+03:00"
+   "error": "Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://isealimkariyerkapisi.cbiko.gov.tr/\nCall log:\n  - navigating to \"https://isealimkariyerkapisi.cbiko.gov.tr/\", wa",
+   "checked": "2026-11-09T08:00:04+03:00"
   },
   {
    "id": "iskur_memur",
@@ -85,7 +85,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-09T06:53:33+03:00"
+   "checked": "2026-11-09T08:01:10+03:00"
   },
   {
    "id": "iskur_isci",
@@ -94,7 +94,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-09T06:53:41+03:00"
+   "checked": "2026-11-09T08:01:18+03:00"
   },
   {
    "id": "resmigazete",
@@ -103,8 +103,8 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-09T06:53:49+03:00"
+   "checked": "2026-11-09T08:01:26+03:00"
   }
  ],
- "updated": "2026-11-09T06:53:53+03:00"
+ "updated": "2026-11-09T08:01:29+03:00"
 }
