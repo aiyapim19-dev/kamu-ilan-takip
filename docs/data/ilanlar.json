@@ -65,7 +65,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-12T23:46:25+03:00"
+   "checked": "2026-11-13T00:42:52+03:00"
   },
   {
    "id": "yerel",
@@ -74,7 +74,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-12T23:46:27+03:00"
+   "checked": "2026-11-13T00:42:53+03:00"
   },
   {
    "id": "ilangov",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-12T23:47:12+03:00"
+   "checked": "2026-11-13T00:43:39+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -92,7 +92,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-12T23:47:18+03:00"
+   "checked": "2026-11-13T00:43:45+03:00"
   },
   {
    "id": "iskur_memur",
@@ -101,7 +101,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-12T23:47:25+03:00"
+   "checked": "2026-11-13T00:43:51+03:00"
   },
   {
    "id": "iskur_isci",
@@ -110,17 +110,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-12T23:47:31+03:00"
+   "checked": "2026-11-13T00:43:56+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-12",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-13",
    "ok": true,
-   "count": 1,
-   "error": "",
-   "checked": "2026-11-12T23:47:38+03:00"
+   "count": 0,
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-13T00:44:03+03:00"
   }
  ],
- "updated": "2026-11-12T23:47:41+03:00"
+ "updated": "2026-11-13T00:44:05+03:00"
 }
