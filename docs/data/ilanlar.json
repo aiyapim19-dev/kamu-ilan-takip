@@ -81,7 +81,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-14T23:34:20+03:00"
+   "checked": "2026-11-15T00:32:23+03:00"
   },
   {
    "id": "yerel",
@@ -90,7 +90,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-14T23:34:22+03:00"
+   "checked": "2026-11-15T00:32:25+03:00"
   },
   {
    "id": "ilangov",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-14T23:35:08+03:00"
+   "checked": "2026-11-15T00:33:11+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -108,7 +108,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-14T23:35:15+03:00"
+   "checked": "2026-11-15T00:33:16+03:00"
   },
   {
    "id": "iskur_memur",
@@ -117,7 +117,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-14T23:35:23+03:00"
+   "checked": "2026-11-15T00:33:22+03:00"
   },
   {
    "id": "iskur_isci",
@@ -126,17 +126,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-14T23:35:30+03:00"
+   "checked": "2026-11-15T00:33:29+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-14",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-15",
    "ok": true,
-   "count": 1,
-   "error": "",
-   "checked": "2026-11-14T23:35:38+03:00"
+   "count": 0,
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-15T00:33:36+03:00"
   }
  ],
- "updated": "2026-11-14T23:35:41+03:00"
+ "updated": "2026-11-15T00:33:38+03:00"
 }
