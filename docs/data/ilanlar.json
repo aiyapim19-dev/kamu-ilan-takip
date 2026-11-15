@@ -1,6 +1,30 @@
 {
  "items": [
   {
+   "id": "f2d8103d23804eb0",
+   "source": "resmigazete",
+   "kurum": "–– Atılım Üniversitesi",
+   "baslik": "–– Atılım Üniversitesi Lisansüstü Eğitim-Öğretim Yönetmeliği",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261116-2.htm",
+   "first_seen": "2026-11-16T00:35:21+03:00"
+  },
+  {
+   "id": "71ebcbe280718875",
+   "source": "resmigazete",
+   "kurum": "–– Karadeniz Teknik Üniversitesi",
+   "baslik": "–– Karadeniz Teknik Üniversitesi Lisansüstü Eğitim-Öğretim Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261116-3.htm",
+   "first_seen": "2026-11-16T00:35:21+03:00"
+  },
+  {
+   "id": "55e7cf93a50a6d4f",
+   "source": "resmigazete",
+   "kurum": "–– Karadeniz Teknik Üniversitesi",
+   "baslik": "–– Karadeniz Teknik Üniversitesi Ön Lisans ve Lisans Eğitim-Öğretim Yönetmeliği",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261116-4.htm",
+   "first_seen": "2026-11-16T00:35:21+03:00"
+  },
+  {
    "id": "80a912e5d3e9998b",
    "source": "resmigazete",
    "kurum": "",
@@ -81,7 +105,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-15T23:35:49+03:00"
+   "checked": "2026-11-16T00:34:07+03:00"
   },
   {
    "id": "yerel",
@@ -90,7 +114,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-15T23:35:51+03:00"
+   "checked": "2026-11-16T00:34:08+03:00"
   },
   {
    "id": "ilangov",
@@ -99,7 +123,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-15T23:36:37+03:00"
+   "checked": "2026-11-16T00:34:54+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -108,7 +132,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-15T23:36:42+03:00"
+   "checked": "2026-11-16T00:35:00+03:00"
   },
   {
    "id": "iskur_memur",
@@ -117,7 +141,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-15T23:36:49+03:00"
+   "checked": "2026-11-16T00:35:06+03:00"
   },
   {
    "id": "iskur_isci",
@@ -126,17 +150,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-15T23:36:55+03:00"
+   "checked": "2026-11-16T00:35:12+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-15",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-16",
    "ok": true,
-   "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-15T23:37:02+03:00"
+   "count": 3,
+   "error": "",
+   "checked": "2026-11-16T00:35:19+03:00"
   }
  ],
- "updated": "2026-11-15T23:37:04+03:00"
+ "updated": "2026-11-16T00:35:21+03:00"
 }
