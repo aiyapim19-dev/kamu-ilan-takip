@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "aedad36f6e1c7b03",
+   "source": "ilangov",
+   "kurum": "T.C. KÜLTÜR VE TURİZM BAKANLIĞI",
+   "baslik": "T.C. KÜLTÜR VE TURİZM BAKANLIĞI BİLGİ TEKNOLOJİLERİ GENEL MÜDÜRLÜĞÜ Sahne sistemleri hizmeti alınacak",
+   "url": "https://www.ilan.gov.tr/ilan/2289879/ihale-duyurulari-hizmet-alim-ihaleleri-sahne-sistemleri-hizmeti-alinacak",
+   "first_seen": "2026-11-16T13:38:37+03:00"
+  },
+  {
    "id": "eacd5c723b0166cf",
    "source": "ilangov",
    "kurum": "UZUNKÖPRÜ TİCARET VE SANAYİ ODASI",
@@ -113,7 +121,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-16T11:36:05+03:00"
+   "checked": "2026-11-16T13:37:14+03:00"
   },
   {
    "id": "yerel",
@@ -122,16 +130,16 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-16T11:36:07+03:00"
+   "checked": "2026-11-16T13:37:16+03:00"
   },
   {
    "id": "ilangov",
    "name": "ilan.gov.tr",
    "url": "https://www.ilan.gov.tr/",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": "",
-   "checked": "2026-11-16T11:36:53+03:00"
+   "checked": "2026-11-16T13:38:02+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -140,7 +148,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T11:36:59+03:00"
+   "checked": "2026-11-16T13:38:08+03:00"
   },
   {
    "id": "iskur_memur",
@@ -149,7 +157,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T11:37:05+03:00"
+   "checked": "2026-11-16T13:38:22+03:00"
   },
   {
    "id": "iskur_isci",
@@ -158,7 +166,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T11:37:11+03:00"
+   "checked": "2026-11-16T13:38:28+03:00"
   },
   {
    "id": "resmigazete",
@@ -167,8 +175,8 @@
    "ok": true,
    "count": 3,
    "error": "",
-   "checked": "2026-11-16T11:37:18+03:00"
+   "checked": "2026-11-16T13:38:35+03:00"
   }
  ],
- "updated": "2026-11-16T11:37:20+03:00"
+ "updated": "2026-11-16T13:38:37+03:00"
 }
