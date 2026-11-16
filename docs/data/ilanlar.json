@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "c2849102e284ce02",
+   "source": "resmigazete",
+   "kurum": "–– Adli Tıp Kurumu",
+   "baslik": "–– Adli Tıp Kurumu Personeli Görevde Yükselme ve Unvan Değişikliği Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261117-1.htm",
+   "first_seen": "2026-11-17T00:46:50+03:00"
+  },
+  {
    "id": "aedad36f6e1c7b03",
    "source": "ilangov",
    "kurum": "T.C. KÜLTÜR VE TURİZM BAKANLIĞI",
@@ -121,7 +129,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-16T23:46:52+03:00"
+   "checked": "2026-11-17T00:45:25+03:00"
   },
   {
    "id": "yerel",
@@ -130,7 +138,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-16T23:46:53+03:00"
+   "checked": "2026-11-17T00:45:27+03:00"
   },
   {
    "id": "ilangov",
@@ -139,7 +147,7 @@
    "ok": true,
    "count": 2,
    "error": "",
-   "checked": "2026-11-16T23:47:38+03:00"
+   "checked": "2026-11-17T00:46:13+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -148,7 +156,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T23:47:44+03:00"
+   "checked": "2026-11-17T00:46:19+03:00"
   },
   {
    "id": "iskur_memur",
@@ -157,7 +165,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T23:48:02+03:00"
+   "checked": "2026-11-17T00:46:34+03:00"
   },
   {
    "id": "iskur_isci",
@@ -166,17 +174,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-16T23:48:07+03:00"
+   "checked": "2026-11-17T00:46:41+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-16",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-17",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": "",
-   "checked": "2026-11-16T23:48:13+03:00"
+   "checked": "2026-11-17T00:46:48+03:00"
   }
  ],
- "updated": "2026-11-16T23:48:22+03:00"
+ "updated": "2026-11-17T00:46:50+03:00"
 }
