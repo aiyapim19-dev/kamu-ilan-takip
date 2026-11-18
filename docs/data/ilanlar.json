@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "868212c16cf48a9b",
+   "source": "resmigazete",
+   "kurum": "–– Bursa Uludağ Üniversitesi",
+   "baslik": "–– Bursa Uludağ Üniversitesi Önlisans ve Lisans Eğitim Öğretim Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261119-3.htm",
+   "first_seen": "2026-11-19T00:58:42+03:00"
+  },
+  {
    "id": "c2849102e284ce02",
    "source": "resmigazete",
    "kurum": "–– Adli Tıp Kurumu",
@@ -129,7 +137,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-18T23:51:12+03:00"
+   "checked": "2026-11-19T00:57:09+03:00"
   },
   {
    "id": "yerel",
@@ -138,7 +146,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-18T23:51:14+03:00"
+   "checked": "2026-11-19T00:57:11+03:00"
   },
   {
    "id": "ilangov",
@@ -147,7 +155,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-18T23:51:59+03:00"
+   "checked": "2026-11-19T00:57:57+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -156,16 +164,16 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-18T23:52:05+03:00"
+   "checked": "2026-11-19T00:58:27+03:00"
   },
   {
    "id": "iskur_memur",
    "name": "İŞKUR – Kamu Memur",
-   "url": "https://www.iskur.gov.tr/",
-   "ok": true,
+   "url": "https://www.iskur.gov.tr/baglantilar/kamu-memur-alim-ilanlari/",
+   "ok": false,
    "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-18T23:52:17+03:00"
+   "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "checked": "2026-11-19T00:58:34+03:00"
   },
   {
    "id": "iskur_isci",
@@ -174,17 +182,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-18T23:52:24+03:00"
+   "checked": "2026-11-19T00:58:36+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-18",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-19",
    "ok": true,
-   "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-18T23:52:31+03:00"
+   "count": 1,
+   "error": "",
+   "checked": "2026-11-19T00:58:39+03:00"
   }
  ],
- "updated": "2026-11-18T23:52:40+03:00"
+ "updated": "2026-11-19T00:58:42+03:00"
 }
