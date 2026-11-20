@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "806cca03af32c250",
+   "source": "ilangov",
+   "kurum": "DEVLET HAVA MEYDANLARI İŞLETMESİ GENEL MÜDÜRLÜĞÜ",
+   "baslik": "DEVLET HAVA MEYDANLARI İŞLETMESİ GENEL MÜDÜRLÜĞÜ (DHMİ) Etüt proje hizmeti alınacak",
+   "url": "https://www.ilan.gov.tr/ilan/2295546/ihale-duyurulari-hizmet-alim-ihaleleri-etut-proje-hizmeti-alinacak",
+   "first_seen": "2026-11-20T19:57:29+03:00"
+  },
+  {
    "id": "868212c16cf48a9b",
    "source": "resmigazete",
    "kurum": "–– Bursa Uludağ Üniversitesi",
@@ -137,7 +145,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-20T18:54:17+03:00"
+   "checked": "2026-11-20T19:56:15+03:00"
   },
   {
    "id": "yerel",
@@ -146,16 +154,16 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-20T18:54:19+03:00"
+   "checked": "2026-11-20T19:56:17+03:00"
   },
   {
    "id": "ilangov",
    "name": "ilan.gov.tr",
    "url": "https://www.ilan.gov.tr/",
    "ok": true,
-   "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-20T18:55:04+03:00"
+   "count": 1,
+   "error": "",
+   "checked": "2026-11-20T19:57:03+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -164,7 +172,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-20T18:55:10+03:00"
+   "checked": "2026-11-20T19:57:09+03:00"
   },
   {
    "id": "iskur_memur",
@@ -173,7 +181,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-20T18:55:15+03:00"
+   "checked": "2026-11-20T19:57:14+03:00"
   },
   {
    "id": "iskur_isci",
@@ -182,7 +190,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-20T18:55:20+03:00"
+   "checked": "2026-11-20T19:57:20+03:00"
   },
   {
    "id": "resmigazete",
@@ -191,8 +199,8 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-20T18:55:26+03:00"
+   "checked": "2026-11-20T19:57:26+03:00"
   }
  ],
- "updated": "2026-11-20T18:55:27+03:00"
+ "updated": "2026-11-20T19:57:29+03:00"
 }
