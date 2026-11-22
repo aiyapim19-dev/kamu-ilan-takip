@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "47b90e075daacfb9",
+   "source": "resmigazete",
+   "kurum": "–– Biruni Üniversitesi",
+   "baslik": "–– Biruni Üniversitesi Lisansüstü Eğitim-Öğretim ve Sınav Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261123-2.htm",
+   "first_seen": "2026-11-23T00:40:47+03:00"
+  },
+  {
    "id": "f7acde5de58eef9c",
    "source": "resmigazete",
    "kurum": "–– Hatay Mustafa Kemal Üniversitesi",
@@ -153,7 +161,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-22T23:41:34+03:00"
+   "checked": "2026-11-23T00:39:26+03:00"
   },
   {
    "id": "yerel",
@@ -162,7 +170,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-22T23:41:36+03:00"
+   "checked": "2026-11-23T00:39:28+03:00"
   },
   {
    "id": "ilangov",
@@ -171,7 +179,7 @@
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-22T23:42:21+03:00"
+   "checked": "2026-11-23T00:40:14+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -180,7 +188,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-22T23:42:27+03:00"
+   "checked": "2026-11-23T00:40:20+03:00"
   },
   {
    "id": "iskur_memur",
@@ -189,7 +197,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-22T23:42:40+03:00"
+   "checked": "2026-11-23T00:40:31+03:00"
   },
   {
    "id": "iskur_isci",
@@ -198,17 +206,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-22T23:42:46+03:00"
+   "checked": "2026-11-23T00:40:37+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
-   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-22",
+   "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-23",
    "ok": true,
    "count": 1,
    "error": "",
-   "checked": "2026-11-22T23:42:53+03:00"
+   "checked": "2026-11-23T00:40:44+03:00"
   }
  ],
- "updated": "2026-11-22T23:42:54+03:00"
+ "updated": "2026-11-23T00:40:47+03:00"
 }
