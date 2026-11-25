@@ -169,7 +169,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-25T14:58:10+03:00"
+   "checked": "2026-11-25T16:13:48+03:00"
   },
   {
    "id": "yerel",
@@ -178,7 +178,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-25T14:58:12+03:00"
+   "checked": "2026-11-25T16:13:50+03:00"
   },
   {
    "id": "ilangov",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-25T14:58:57+03:00"
+   "checked": "2026-11-25T16:14:35+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -196,7 +196,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-25T14:59:03+03:00"
+   "checked": "2026-11-25T16:14:41+03:00"
   },
   {
    "id": "iskur_memur",
@@ -205,7 +205,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-25T14:59:08+03:00"
+   "checked": "2026-11-25T16:14:47+03:00"
   },
   {
    "id": "iskur_isci",
@@ -214,17 +214,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-25T14:59:14+03:00"
+   "checked": "2026-11-25T16:14:52+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
    "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-25",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "ConnectTimeout: HTTPSConnectionPool(host='www.resmigazete.gov.tr', port=443): Max retries exceeded with url: /fihrist?tarih=2026-11-25 (Caused by ConnectTimeoutError(<HTTPSConn",
-   "checked": "2026-11-25T14:59:20+03:00"
+   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
+   "checked": "2026-11-25T16:14:59+03:00"
   }
  ],
- "updated": "2026-11-25T15:00:06+03:00"
+ "updated": "2026-11-25T16:15:02+03:00"
 }
