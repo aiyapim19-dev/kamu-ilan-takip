@@ -1,6 +1,14 @@
 {
  "items": [
   {
+   "id": "23d3aaef34eb4888",
+   "source": "resmigazete",
+   "kurum": "",
+   "baslik": "–– 6183 Sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanunun 51 inci Maddesinin Birinci Fıkrasında Yer Alan Gecikme Zammı Oranının, Her Ay İçin Ayrı Ayrı Uygulanmak Üzere %3,2 Olarak Belirlenmesi Hakkında Karar (Karar Sayısı: 12028)",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2026/11/20261127-15.pdf",
+   "first_seen": "2026-11-27T01:55:04+03:00"
+  },
+  {
    "id": "8c42ee57244d807d",
    "source": "resmigazete",
    "kurum": "–– Mustafa Kemal Üniversitesi",
@@ -177,7 +185,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: 403 Client Error: Forbidden for url: https://kamuilan.sbb.gov.tr/",
-   "checked": "2026-11-27T00:51:58+03:00"
+   "checked": "2026-11-27T01:53:49+03:00"
   },
   {
    "id": "yerel",
@@ -186,7 +194,7 @@
    "ok": false,
    "count": 0,
    "error": "ConnectTimeout: HTTPSConnectionPool(host='yerelyonetimler.csb.gov.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='yerelyo",
-   "checked": "2026-11-27T00:51:59+03:00"
+   "checked": "2026-11-27T01:53:50+03:00"
   },
   {
    "id": "ilangov",
@@ -195,7 +203,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-27T00:52:46+03:00"
+   "checked": "2026-11-27T01:54:37+03:00"
   },
   {
    "id": "kariyerkapisi",
@@ -204,7 +212,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-27T00:52:51+03:00"
+   "checked": "2026-11-27T01:54:43+03:00"
   },
   {
    "id": "iskur_memur",
@@ -213,7 +221,7 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-27T00:52:57+03:00"
+   "checked": "2026-11-27T01:54:49+03:00"
   },
   {
    "id": "iskur_isci",
@@ -222,17 +230,17 @@
    "ok": true,
    "count": 0,
    "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-27T00:53:03+03:00"
+   "checked": "2026-11-27T01:54:55+03:00"
   },
   {
    "id": "resmigazete",
    "name": "Resmî Gazete",
    "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2026-11-27",
    "ok": true,
-   "count": 0,
-   "error": "Sayfa açıldı ama ilan bulunamadı (sayfa yapısı farklı olabilir)",
-   "checked": "2026-11-27T00:53:11+03:00"
+   "count": 1,
+   "error": "",
+   "checked": "2026-11-27T01:55:02+03:00"
   }
  ],
- "updated": "2026-11-27T00:53:14+03:00"
+ "updated": "2026-11-27T01:55:04+03:00"
 }
